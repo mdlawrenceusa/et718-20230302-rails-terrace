@@ -1,0 +1,82 @@
+<%= form_for(booking) do |f| %>
+  <% if booking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+      <% booking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :event_name %>
+    <%= f.text_field :event_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wait_staff %>
+    <%= f.text_area :wait_staff %>
+  </div>
+
+  <div class="field">
+    <%= f.label :host %>
+    <%= f.text_area :host %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_type %>
+    <%= f.text_field :event_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :start_time %>
+    <%= f.text_field :start_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :end_time %>
+    <%= f.text_field :end_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :occupants %>
+    <%= f.text_field :occupants %>
+  </div>
+
+  <div class="field">
+    <%= f.label :menu_items %>
+    <%= f.text_area :menu_items %>
+  </div>
+
+  <div class="field">
+    <%= f.label :room_layout %>
+    <%= f.text_field :room_layout %>
+  </div>
+
+  <div class="field">
+    <%= f.label :seating %>
+    <%= f.text_field :seating %>
+  </div>
+
+  <div class="field">
+    <%= f.label :employee_start_time %>
+    <%= f.text_field :employee_start_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :employee_end_time %>
+    <%= f.text_field :employee_end_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_phases %>
+    <%= f.text_area :event_phases %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

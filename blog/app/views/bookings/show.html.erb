@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event name:</strong>
+  <%= @booking.event_name %>
+</p>
+
+<p>
+  <strong>Wait staff:</strong>
+  <%= @booking.wait_staff %>
+</p>
+
+<p>
+  <strong>Host:</strong>
+  <%= @booking.host %>
+</p>
+
+<p>
+  <strong>Event type:</strong>
+  <%= @booking.event_type %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @booking.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @booking.end_time %>
+</p>
+
+<p>
+  <strong>Occupants:</strong>
+  <%= @booking.occupants %>
+</p>
+
+<p>
+  <strong>Menu items:</strong>
+  <%= @booking.menu_items %>
+</p>
+
+<p>
+  <strong>Room layout:</strong>
+  <%= @booking.room_layout %>
+</p>
+
+<p>
+  <strong>Seating:</strong>
+  <%= @booking.seating %>
+</p>
+
+<p>
+  <strong>Employee start time:</strong>
+  <%= @booking.employee_start_time %>
+</p>
+
+<p>
+  <strong>Employee end time:</strong>
+  <%= @booking.employee_end_time %>
+</p>
+
+<p>
+  <strong>Event phases:</strong>
+  <%= @booking.event_phases %>
+</p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bookings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event name</th>
+      <th>Wait staff</th>
+      <th>Host</th>
+      <th>Event type</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Occupants</th>
+      <th>Menu items</th>
+      <th>Room layout</th>
+      <th>Seating</th>
+      <th>Employee start time</th>
+      <th>Employee end time</th>
+      <th>Event phases</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bookings.each do |booking| %>
+      <tr>
+        <td><%= booking.event_name %></td>
+        <td><%= booking.wait_staff %></td>
+        <td><%= booking.host %></td>
+        <td><%= booking.event_type %></td>
+        <td><%= booking.start_time %></td>
+        <td><%= booking.end_time %></td>
+        <td><%= booking.occupants %></td>
+        <td><%= booking.menu_items %></td>
+        <td><%= booking.room_layout %></td>
+        <td><%= booking.seating %></td>
+        <td><%= booking.employee_start_time %></td>
+        <td><%= booking.employee_end_time %></td>
+        <td><%= booking.event_phases %></td>
+        <td><%= link_to 'Show', booking %></td>
+        <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
+        <td><%= link_to 'Destroy', booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Booking', new_booking_path %>

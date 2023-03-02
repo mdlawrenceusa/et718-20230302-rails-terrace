@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  wait_staff: MyText
+  host: MyText
+  event_type: MyString
+  start_time: MyString
+  end_time: MyString
+  occupants: MyString
+  menu_items: MyText
+  room_layout: MyString
+  seating: MyString
+  employee_start_time: MyString
+  employee_end_time: MyString
+  event_phases: MyText
+
+two:
+  event_name: MyString
+  wait_staff: MyText
+  host: MyText
+  event_type: MyString
+  start_time: MyString
+  end_time: MyString
+  occupants: MyString
+  menu_items: MyText
+  room_layout: MyString
+  seating: MyString
+  employee_start_time: MyString
+  employee_end_time: MyString
+  event_phases: MyText
